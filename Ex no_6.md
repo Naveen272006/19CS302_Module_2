@@ -1,34 +1,34 @@
 # EX 6 C Program to print the string "KEYBOARD" n number of times.
 
+## DATE:
+
 ## AIM:
 To write a C Program to print the string "KEYBOARD" n number of times.
 
 ## Algorithm
-1. Start the program. 
-2.Declare an integer variable n. 
-3.Take input from the user for the number of times to print the string. 
-4.Use a loop from 1 to n to print the string "KEYBOARD". 
-5.End the program.  
+1. Start. 
+2. Declare the variables i,n. 
+3. Prompt the user to enter a value. 
+4. Read the value using scanf. 
+5. Run the for loop for “i” variable. 
+6. Print “KEYBOARD\n”. 
+7. End.
 
 ## Program:
 ```
-
-#include <stdio.h>
-
-int main()
-{
-    int n, i;
-    scanf("%d", &n);
-    for(i = 1; i <= n; i++)
-{
-        printf("KEYBOARD\n");
-    }
-    return 0;
-}
+#include<stdio.h> 
+int main() 
+{ 
+int i,n; 
+scanf("%d",&n); 
+for(i=1;i<=n;i++) 
+{printf("KEYBOARD\n"); 
+}return 0; 
+} 
 ```
-
 ## Output:
-![image](https://github.com/user-attachments/assets/1a3832a5-e59a-43a6-b2b4-1d46b28d8217)
+![image](https://github.com/user-attachments/assets/706ebd87-3e24-4dcb-b197-5b32ab9d4b29)
+
 
 
 ## Result:
