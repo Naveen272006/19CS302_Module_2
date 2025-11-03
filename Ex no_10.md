@@ -1,42 +1,40 @@
 # EX 10 C program to find the factorial of a given number using a function with arguments and return type.
 
+## DATE:
+
 ## AIM:
 To write a C program to find the factorial of a given number using a function with arguments and return type.
 
 ## Algorithm
-1. Start the program.
-2. Take input of the number n from the user.
-3. Define a function that takes an integer as an argument and returns the factorial of that number.
-4. Call the factorial function with n and store the result.
-5. Print the factorial and end the program.  
+1. Start. 
+2. Declare the variables. 
+3. Prompt the user to enter a value. 
+4. Read the value using scanf. 
+5. Enter factorial of the number. 
+6. End.  
 
 ## Program:
 ```
-
-#include <stdio.h>
-
-int factorial(int n)
-{
-    int fact = 1, i;
-    for(i = 1; i <= n; i++)
-{
-        fact *= i;
-    }
-    return fact;
-}
-
-int main()
-{
-    int n, result;
-    scanf("%d", &n);
-    result = factorial(n);
-    printf("%d\n", result);
-    return 0;
+#include <stdio.h> 
+int main() { 
+    int n, i; 
+    unsigned long long factorial = 1; 
+    scanf("%d", &n); 
+ 
+    if (n < 0) { 
+        printf("Factorial is not defined for negative numbers.\n"); 
+    } else { 
+        for (i = 1; i <= n; i++) { 
+            factorial *= i; 
+        } 
+        printf("Factorial of %d = %llu\n", n, factorial); 
+    } 
+    return 0; 
 }
 ```
-
 ## Output:
-![image](https://github.com/user-attachments/assets/1b876ec6-3233-428f-a46d-9573157a340f)
+![image](https://github.com/user-attachments/assets/6d13c1bf-84a0-4317-9f80-97810dacdd0d)
+
 
 
 ## Result:
