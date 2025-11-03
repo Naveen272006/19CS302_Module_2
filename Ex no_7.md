@@ -1,46 +1,35 @@
-# EX 8 C program to perform multiplication and division of two numbers using functions (without argument and without return type).
+# EX 7 C Program to Print a right triangle star Pattern
+
+## DATE:
 
 ## AIM:
-To write a C program to perform multiplication and division of two numbers using functions (without argument and without return type).
+To write a C Program to Print a right triangle star Pattern
 
 ## Algorithm
-1. 1.Start the program.
-2.Declare two global variables for the numbers.
-3.Create two functions — one for multiplication and one for division — without arguments and return type. 
-4.In main(), take input for the two numbers, then call both functions. 
-5.End the program.  
+1. Start. 
+2. Declare the variables i,j,k,n. 
+3. Prompt the user to enter a value. 
+4. Read the value using scanf. 
+5. Enter number of rows and columns. 
+6. End.
 
 ## Program:
 ```
-
-#include <stdio.h>
-
-int num1, num2;
-
-void multiply()
-{
-    printf("Multiplication: %d\n", num1 * num2);
-}
-
-void divide()
-{
-    if(num2 != 0)
-        printf("Division: %.2f\n", (float)num1 / num2);
-    else
-        printf("Division by zero is not allowed.\n");
-}
-
-int main()
-{
-    scanf("%d%d", &num1, &num2);
-    multiply();
-    divide();
-    return 0;
+#include <stdio.h> 
+int main() { 
+    int i, j, rows; 
+    scanf("%d", &rows); 
+    for (i = 1; i <= rows; i++) { 
+        for (j = 1; j <= i; j++) { 
+            printf("*"); 
+        } 
+        printf("\n"); 
+    }    return 0; 
 }
 ```
-
 ## Output:
-![image](https://github.com/user-attachments/assets/f6ec7f29-2d8f-4ca1-8584-ac24ffc423a1)
+
+![image](https://github.com/user-attachments/assets/18508b97-4a8a-41b1-920f-cc2fb4f997c0)
 
 
 ## Result:
